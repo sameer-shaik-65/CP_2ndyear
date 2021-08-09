@@ -1,0 +1,11 @@
+{
+    "handtodice.py": [
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Mon Aug 09 2021 13:31:13",
+            "keyStrokeInfo": "return tuple(int(i) for i in str(hand))",
+            "position": "10,2"
+        }
+    ]
+}
