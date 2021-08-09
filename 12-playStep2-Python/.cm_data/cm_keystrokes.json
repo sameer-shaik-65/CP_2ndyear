@@ -1,0 +1,18 @@
+{
+    "playstep2.py": [
+        {
+            "operation": "PASTE",
+            "lines": 23,
+            "keyStrokeTimeStamp": "Mon Aug 09 2021 16:47:16",
+            "keyStrokeInfo": "def playstep2(hand, dice):\r\n\r\n\tnum = set(str(hand))\r\n\r\n\tif len(num)==1:\r\n\t\treturn (hand, dice)\r\n\r\n\telif (len(num)!=2):\r\n\t\thand = str(hand)\r\n\t\tdice = str(dice)\r\n\t\tres = max(hand)+dice[-2:]\r\n\t\tres2 = ''.join(sorted(res))\r\n\t\treturn (int(res2[::-1]), int(dice[:-2]))\r\n\r\n\telse:\r\n\t\thand = str(hand)\r\n\t\tdice = str(dice)\r\n\t\tres = dice[-1:]\r\n\t\tfor i in (hand):\r\n\t\t\tif hand.count(i)>1:\r\n\t\t\t\tres = res + i \r\n\t\tres2 = ''.join(sorted(res))\r\n\t\treturn (int(res2[::-1]), int(dice[:-1])) ",
+            "position": "36,1"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 09 2021 16:47:16",
+            "keyStrokeInfo": "    ",
+            "position": "37,1"
+        }
+    ]
+}
