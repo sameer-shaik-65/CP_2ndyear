@@ -38,24 +38,6 @@
 # assert(bonusPlayThreeDiceYahtzee(2333413) == (333, 29))
 # assert(bonusPlayThreeDiceYahtzee(2333555) == (555, 35))
 
-def rep(lis):
-    for i in range(2):
-        if(lis[i]==lis[i+1]):
-                return True
-    return False
-def order(li):
-        # your code goes here
-    
-    count=0
-    li.sort()
-    for i,j in enumerate(li):
-            # print("i",i)
-            # print("j",j)
-            
-            count+=j*(10**i)
-            # print("count",count)
-    return count
-
 def playstep2(hand, dice):
     
 	num = set(str(hand))
@@ -78,14 +60,12 @@ def playstep2(hand, dice):
 			if hand.count(i)>1:
 				res = res + i 
 		res2 = ''.join(sorted(res))
-		return [int(res2[::-1]), int(dice[:-1])]
+		return (int(res2[::-1]), int(dice[:-1])) 
+  
 def score(hand):
     di={}
-    handl=[]
-    while(hand):
-        handl.append(hand%10)
-        hand=hand//10
-    handl=handl[::-1]
+    
+    handl=[int(i) for i in str(hand)]
     for i in handl:
         di[i]=handl.count(i)
     m=max(di, key=di.get)
@@ -105,5 +85,6 @@ def bonusplaythreediceyahtzee(dice):
         hand=mm[0]
         dice=mm[1]
     return (hand,score(hand))
+
 
 
