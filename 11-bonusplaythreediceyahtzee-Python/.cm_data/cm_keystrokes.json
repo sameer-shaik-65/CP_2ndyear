@@ -1,0 +1,109 @@
+{
+    "bonusplaythreediceyahtzee.py": [
+        {
+            "operation": "PASTE",
+            "lines": 50,
+            "keyStrokeTimeStamp": "Mon Aug 09 2021 23:13:07",
+            "keyStrokeInfo": "def playstep2(hand, dice):\r\n    \r\n\tnum = set(str(hand))\r\n\r\n\tif len(num)==1:\r\n\t\treturn (hand, dice)\r\n\r\n\telif (len(num)!=2):\r\n\t\thand = str(hand)\r\n\t\tdice = str(dice)\r\n\t\tres = max(hand)+dice[-2:]\r\n\t\tres2 = ''.join(sorted(res))\r\n\t\treturn (int(res2[::-1]), int(dice[:-2]))\r\n\r\n\telse:\r\n\t\thand = str(hand)\r\n\t\tdice = str(dice)\r\n\t\tres = dice[-1:]\r\n\t\tfor i in (hand):\r\n\t\t\tif hand.count(i)>1:\r\n\t\t\t\tres = res + i \r\n\t\tres2 = ''.join(sorted(res))\r\n\t\treturn (int(res2[::-1]), int(dice[:-1])) \r\n  \r\ndef score(hand):\r\n    di={}\r\n    handl=[]\r\n    while(hand):\r\n        handl.append(hand%10)\r\n        hand=hand//10\r\n    handl=handl[::-1]\r\n    for i in handl:\r\n        di[i]=handl.count(i)\r\n    m=max(di, key=di.get)\r\n    if(di[m]==1):\r\n        return max(handl)\r\n    elif(di[m]==2):\r\n        return 10+2*m\r\n    else:\r\n        return 20+3*m\r\n\r\ndef bonusplaythreediceyahtzee(dice):\r\n    result=str(dice)\r\n    hand=int(result[-3:])\r\n    dice=int(result[:-3])\r\n    for i in range(2):\r\n        mm=playstep2(hand, dice)\r\n        hand=mm[0]\r\n        dice=mm[1]\r\n    return (hand,score(hand))\r\n\r\n\r\n",
+            "position": "42,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 09 2021 23:17:40",
+            "keyStrokeInfo": "",
+            "position": "64,10"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 09 2021 23:17:41",
+            "keyStrokeInfo": "[",
+            "position": "64,10"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 09 2021 23:17:43",
+            "keyStrokeInfo": "",
+            "position": "64,43"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 09 2021 23:17:43",
+            "keyStrokeInfo": "",
+            "position": "64,42"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 09 2021 23:17:44",
+            "keyStrokeInfo": "]",
+            "position": "64,42"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 50,
+            "keyStrokeTimeStamp": "Mon Aug 09 2021 23:19:27",
+            "keyStrokeInfo": "",
+            "position": "41,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 62,
+            "keyStrokeTimeStamp": "Mon Aug 09 2021 23:19:28",
+            "keyStrokeInfo": "def rep(lis):\r\n    for i in range(2):\r\n        if(lis[i]==lis[i+1]):\r\n                return True\r\n    return False\r\ndef order(li):\r\n        # your code goes here\r\n    \r\n    count=0\r\n    li.sort()\r\n    for i,j in enumerate(li):\r\n            # print(\"i\",i)\r\n            # print(\"j\",j)\r\n            \r\n            count+=j*(10**i)\r\n            # print(\"count\",count)\r\n    return count\r\n\r\ndef playstep2(hand, dice):\r\n    handl=[]\r\n    while(hand):\r\n        handl.append(hand%10)\r\n        hand=hand//10\r\n    handl=handl[::-1]\r\n    if(rep(handl)):\r\n        for i in range(2):\r\n            if(handl[i]!=handl[i+1]):\r\n                    handl[i]=dice%10\r\n                    dice=dice//10\r\n        return (order(handl),dice)\r\n    else:\r\n        m=[max(handl)]\r\n        for i in range(2):\r\n            m.append(dice%10)\r\n            dice=dice//10\r\n        return [order(m),dice]\r\ndef score(hand):\r\n    di={}\r\n    handl=[]\r\n    while(hand):\r\n        handl.append(hand%10)\r\n        hand=hand//10\r\n    handl=handl[::-1]\r\n    for i in handl:\r\n        di[i]=handl.count(i)\r\n    m=max(di, key=di.get)\r\n    if(di[m]==1):\r\n        return max(handl)\r\n    elif(di[m]==2):\r\n        return 10+2*m\r\n    else:\r\n        return 20+3*m\r\n\r\ndef bonusplaythreediceyahtzee(dice):\r\n    result=str(dice)\r\n    hand=int(result[-3:])\r\n    dice=int(result[:-3])\r\n    for i in range(2):\r\n        mm=playstep2(hand, dice)\r\n        hand=mm[0]\r\n        dice=mm[1]\r\n    return (hand,score(hand))",
+            "position": "41,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 17,
+            "keyStrokeTimeStamp": "Mon Aug 09 2021 23:20:36",
+            "keyStrokeInfo": "",
+            "position": "59,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 23,
+            "keyStrokeTimeStamp": "Mon Aug 09 2021 23:20:37",
+            "keyStrokeInfo": "def playstep2(hand, dice):\r\n    \r\n\tnum = set(str(hand))\r\n\r\n\tif len(num)==1:\r\n\t\treturn (hand, dice)\r\n\r\n\telif (len(num)!=2):\r\n\t\thand = str(hand)\r\n\t\tdice = str(dice)\r\n\t\tres = max(hand)+dice[-2:]\r\n\t\tres2 = ''.join(sorted(res))\r\n\t\treturn (int(res2[::-1]), int(dice[:-2]))\r\n\r\n\telse:\r\n\t\thand = str(hand)\r\n\t\tdice = str(dice)\r\n\t\tres = dice[-1:]\r\n\t\tfor i in (hand):\r\n\t\t\tif hand.count(i)>1:\r\n\t\t\t\tres = res + i \r\n\t\tres2 = ''.join(sorted(res))\r\n\t\treturn (int(res2[::-1]), int(dice[:-1])) ",
+            "position": "59,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 09 2021 23:21:18",
+            "keyStrokeInfo": "",
+            "position": "81,43"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 09 2021 23:21:19",
+            "keyStrokeInfo": "",
+            "position": "81,42"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 09 2021 23:21:20",
+            "keyStrokeInfo": "]",
+            "position": "81,42"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 09 2021 23:21:23",
+            "keyStrokeInfo": "",
+            "position": "81,10"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 09 2021 23:21:24",
+            "keyStrokeInfo": "[",
+            "position": "81,10"
+        }
+    ]
+}
