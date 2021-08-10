@@ -1,0 +1,18 @@
+{
+    "pythondictionaries.py": [
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Aug 10 2021 13:53:05",
+            "keyStrokeInfo": "",
+            "position": "42,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Tue Aug 10 2021 14:33:37",
+            "keyStrokeInfo": "# Note: Check for test cases to understand the output format.\r\n",
+            "position": "42,1"
+        }
+    ]
+}
