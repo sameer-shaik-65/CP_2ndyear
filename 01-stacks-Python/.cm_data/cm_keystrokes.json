@@ -1,0 +1,25 @@
+{
+    "stacks.py": [
+        {
+            "operation": "DELETE",
+            "lines": 37,
+            "keyStrokeTimeStamp": "Thu Aug 12 2021 14:16:15",
+            "keyStrokeInfo": "",
+            "position": "9,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 47,
+            "keyStrokeTimeStamp": "Thu Aug 12 2021 14:16:15",
+            "keyStrokeInfo": "class Element(object):\r\n    def _init_(self, value):\r\n        self.value = value\r\n        self.next = None\r\n        \r\nclass LinkedList(object):\r\n    def _init_(self, head=None):\r\n        self.head = head\r\n        \r\n    def append(self, new_element):\r\n        current = self.head\r\n        if self.head:\r\n            while current.next:\r\n                current = current.next\r\n            current.next = new_element\r\n        else:\r\n            self.head = new_element\r\n\r\n    def insert_first(self, new_element):\r\n        \"Insert new element as the head of the LinkedList\"\r\n        new_element.next = self.head\r\n        self.head = new_element\r\n        \r\n       \r\n\r\n    def delete_first(self):\r\n        \"Delete the first (head) element in the LinkedList as return it\"\r\n        if self.head:\r\n            deleted_element = self.head\r\n            temp = deleted_element.next\r\n            self.head = temp\r\n            return deleted_element\r\n        else:\r\n            return None\r\n        \r\n\r\nclass stack(object):\r\n    def _init_(self,top=None):\r\n        self.ll = LinkedList(top)\r\n\r\n    def push(self, new_element):\r\n        \"Push (add) a new element onto the top of the stack\"\r\n        self.ll.insert_first(new_element)\r\n        \r\n    def pop(self):\r\n        \"Pop (remove) the first element off the top of the stack and return it\"\r\n        return self.ll.delete_first()",
+            "position": "9,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 36,
+            "keyStrokeTimeStamp": "Thu Aug 12 2021 16:17:44",
+            "keyStrokeInfo": "\r\n    def __init__(self, value):\r\n        self.value = value\r\n        self.next = None\r\n        \r\nclass LinkedList(object):\r\n    def __init__(self, head=None):\r\n        self.head = head\r\n        \r\n    def append(self, new_element):\r\n        current = self.head\r\n        if self.head:\r\n            while current.next:\r\n                current = current.next\r\n            current.next = new_element\r\n        else:\r\n            self.head = new_element\r\n\r\n    def insert_first(self, new_element):\r\n        \"Insert new element as the head of the LinkedList\"\r\n        pass\r\n\r\n    def delete_first(self):\r\n        \"Delete the first (head) element in the LinkedList as return it\"\r\n        pass\r\n\r\nclass stack(object):\r\n    def __init__(self,top=None):\r\n        self.ll = LinkedList(top)\r\n\r\n    def push(self, new_element):\r\n        \"Push (add) a new element onto the top of the stack\"\r\n        pass\r\n\r\n    def pop(self):\r\n        \"Pop (remove) the first element off the top of the stack and return it\"\r\n        pass\r\n    ",
+            "position": "9,23"
+        }
+    ]
+}

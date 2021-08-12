@@ -1,0 +1,11 @@
+{
+    "queues.py": [
+        {
+            "operation": "PASTE",
+            "lines": 12,
+            "keyStrokeTimeStamp": "Thu Aug 12 2021 16:18:23",
+            "keyStrokeInfo": "class Queue:\r\n    def __init__(self, head=None):\r\n        self.storage = [head]\r\n\r\n    def enqueue(self, new_element):\r\n        self.storage.append(new_element)\r\n\r\n    def peek(self):\r\n        return self.storage[0]\r\n\r\n    def dequeue(self):\r\n        return self.storage.pop(0)",
+            "position": "7,1"
+        }
+    ]
+}
