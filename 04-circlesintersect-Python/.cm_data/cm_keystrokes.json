@@ -1,0 +1,11 @@
+{
+    "circlesintersect.py": [
+        {
+            "operation": "PASTE",
+            "lines": 7,
+            "keyStrokeTimeStamp": "Sat Aug 14 2021 08:11:36",
+            "keyStrokeInfo": "import math \r\n\r\ndef fun_circlesintersect(x1, y1, r1, x2, y2, r2):\r\n\tdistance = math.sqrt((x2-x1)**2 + (y2-y1)**2)\r\n\tif (distance<=(r1+r2)):\r\n\t\treturn True\r\n\treturn False",
+            "position": "7,1"
+        }
+    ]
+}
