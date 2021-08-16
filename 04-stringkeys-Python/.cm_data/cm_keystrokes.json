@@ -1,0 +1,25 @@
+{
+    "stringkeys.py": [
+        {
+            "operation": "DELETE",
+            "lines": 25,
+            "keyStrokeTimeStamp": "Mon Aug 16 2021 10:44:10",
+            "keyStrokeInfo": "",
+            "position": "5,2"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 16 2021 10:44:10",
+            "keyStrokeInfo": "",
+            "position": "5,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 33,
+            "keyStrokeTimeStamp": "Mon Aug 16 2021 10:44:10",
+            "keyStrokeInfo": "class HashTable(object):\r\n    def __init__(self):\r\n        self.table = [None]*10000\r\n\r\n    def store(self, string):\r\n        \"\"\"Input a string that's stored in \r\n        the table.\"\"\"\r\n        # Hash Value = (ASCII Value of First Letter * 100) + ASCII Value of Second Letter \r\n        # Your code goes here\r\n        #pass\r\n        d=self.calculate_hash_value(string)\r\n        self.table.insert(d,string)\r\n        return -1\r\n        \r\n    def lookup(self, string):\r\n        \"\"\"Return the hash value if the\r\n        string is already in the table.\r\n        Return -1 otherwise.\"\"\"\r\n        # Your code goes here\r\n        #pass\r\n        d=self.calculate_hash_value(string)\r\n        if(self.table[d]==None or self.table[d]!=string):\r\n            return -1\r\n        else:\r\n            return d\r\n\r\n    def calculate_hash_value(self, string):\r\n        \"\"\"Helper function to calulate a\r\n        hash value from a string.\"\"\"\r\n        # Your code goes here\r\n        #pass\r\n        Hash=(ord(string[0])*100)+ ord(string[1])\r\n        return Hash",
+            "position": "5,1"
+        }
+    ]
+}
