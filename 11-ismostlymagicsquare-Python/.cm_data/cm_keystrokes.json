@@ -1,0 +1,109 @@
+{
+    "ismostlymagicsquare.py": [
+        {
+            "operation": "PASTE",
+            "lines": 19,
+            "keyStrokeTimeStamp": "Tue Aug 17 2021 09:05:18",
+            "keyStrokeInfo": "def ismostlymagicsquare(a):\r\n\tn = len(a)\r\n\tsumd1=0\r\n\tsumd2=0\r\n\tfor i in range(n):\r\n\t\tsumd1+=a[i][i]\r\n\t\tsumd2+=a[i][n-i-1]\r\n\t\t\r\n\tif not(sumd1==sumd2):\r\n\t\treturn False\r\n\tfor i in range(n):\r\n\t\t\tsumr=0\r\n\t\t\tsumc=0\r\n\t\t\tfor j in range(n):\r\n\t\t\t\tsumr+=a[i][j]\r\n\t\t\t\tsumc+=a[j][i]\r\n\t\t\tif not(sumr==sumc==sumd1):\r\n\t\t\t\treturn False\r\n\treturn True",
+            "position": "15,1"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Aug 17 2021 09:05:18",
+            "keyStrokeInfo": "    ",
+            "position": "16,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Aug 17 2021 09:05:45",
+            "keyStrokeInfo": "",
+            "position": "24,2"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Aug 17 2021 09:05:45",
+            "keyStrokeInfo": "",
+            "position": "24,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Tue Aug 17 2021 09:05:45",
+            "keyStrokeInfo": "",
+            "position": "23,23"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Aug 17 2021 09:05:46",
+            "keyStrokeInfo": "\r\n     ",
+            "position": "23,23"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Aug 17 2021 09:05:47",
+            "keyStrokeInfo": "",
+            "position": "25,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Tue Aug 17 2021 09:05:48",
+            "keyStrokeInfo": "",
+            "position": "24,18"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Aug 17 2021 09:05:48",
+            "keyStrokeInfo": "\r\n ",
+            "position": "24,18"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Aug 17 2021 09:05:52",
+            "keyStrokeInfo": "\t",
+            "position": "25,2"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Tue Aug 17 2021 09:06:02",
+            "keyStrokeInfo": "",
+            "position": "1,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 33,
+            "keyStrokeTimeStamp": "Tue Aug 17 2021 09:06:03",
+            "keyStrokeInfo": "# isMostlyMagicSquare(a) [15 pts]\r\n# Write the function isMostlyMagicSquare(a) that takes an 2d list of numbers, which you may assume is an NxN square \r\n# with N>0, and returns True if it is \"mostly magic\" and False otherwise, where a square is \"mostly magic\" if:\r\n# Each row, each column, and each of the 2 diagonals each sum to the same total.\r\n# A completely magic square has additional restrictions (such as not allowing duplicates, and only allowing numbers \r\n# from 1 to N2), which we are not enforcing here, but which you can read about here. Note: any magic square is also \r\n# a \"mostly magic\" square, including this sample magic square:\r\n# Read for more: https://en.wikipedia.org/wiki/Magic_square\r\n# Here is another mostly-magic square:\r\n# [ [ 42 ]]\r\n# That square is 1x1 and each row, column, and diagonal sums to 42! And finally, here is a not-mostly-magic square:\r\n# [ [ 1, 2],\r\n#   [ 2, 1]]\r\n# Each row and each column add to 3, but one diagonal adds to 2 and the other to 4.\r\ndef ismostlymagicsquare(a):\r\n    \tn = len(a)\r\n\tsumd1=0\r\n\tsumd2=0\r\n\tfor i in range(n):\r\n\t\tsumd1+=a[i][i]\r\n\t\tsumd2+=a[i][n-i-1]\r\n\t\t\r\n\tif not(sumd1==sumd2):\r\n     return False\r\n \tfor i in range(n):\r\n\t\t\tsumr=0\r\n\t\t\tsumc=0\r\n\t\t\tfor j in range(n):\r\n\t\t\t\tsumr+=a[i][j]\r\n\t\t\t\tsumc+=a[j][i]\r\n\t\t\tif not(sumr==sumc==sumd1):\r\n\t\t\t\treturn False\r\n\treturn True",
+            "position": "1,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 18,
+            "keyStrokeTimeStamp": "Tue Aug 17 2021 09:06:07",
+            "keyStrokeInfo": "",
+            "position": "15,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 19,
+            "keyStrokeTimeStamp": "Tue Aug 17 2021 09:06:07",
+            "keyStrokeInfo": "def ismostlymagicsquare(a):\r\n\tn = len(a)\r\n\tsumd1=0\r\n\tsumd2=0\r\n\tfor i in range(n):\r\n\t\tsumd1+=a[i][i]\r\n\t\tsumd2+=a[i][n-i-1]\r\n\t\t\r\n\tif not(sumd1==sumd2):\r\n\t\treturn False\r\n\tfor i in range(n):\r\n\t\t\tsumr=0\r\n\t\t\tsumc=0\r\n\t\t\tfor j in range(n):\r\n\t\t\t\tsumr+=a[i][j]\r\n\t\t\t\tsumc+=a[j][i]\r\n\t\t\tif not(sumr==sumc==sumd1):\r\n\t\t\t\treturn False\r\n\treturn True",
+            "position": "15,1"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Aug 17 2021 09:06:07",
+            "keyStrokeInfo": "    ",
+            "position": "16,1"
+        }
+    ]
+}
