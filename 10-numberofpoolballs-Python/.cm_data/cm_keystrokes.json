@@ -1,0 +1,11 @@
+{
+    "numberofpoolballs.py": [
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Tue Aug 17 2021 09:02:50",
+            "keyStrokeInfo": "return ((rows*(rows+1))/2)",
+            "position": "12,2"
+        }
+    ]
+}
