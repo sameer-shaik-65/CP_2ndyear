@@ -1,0 +1,11 @@
+{
+    "nthpowerfulnumber.py": [
+        {
+            "operation": "PASTE",
+            "lines": 44,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 23:14:56",
+            "keyStrokeInfo": "\r\ndef isprime(x):\r\n\tif(x==2):\r\n\t\treturn True\r\n\telse:\r\n\t\tfor i in range(2,int(x/2)+1):\r\n\t\t\tif(x%i==0):\r\n\t\t\t\treturn False\r\n\treturn True\r\n\r\ndef powerfulnumber(x):\r\n\tif(x==1):\r\n\t\treturn True\t\r\n\telse:\t\t\r\n\t\tcount=0\r\n\t\tcount2=0\r\n\t\tfor i in range(2,x):\r\n\t\t\tif(x%i==0 and isprime(i)):\r\n\t\t\t\tcount+=1\r\n\t\t\t\tif(x%(i*i)==0):\r\n\t\t\t\t\tcount2+=1\r\n\r\n\t\tif(count==0 or count2==0):\r\n\t\t\treturn False\r\n\t\telif(count==count2):\r\n\t\t\treturn True\r\n\r\n\treturn False\r\n\r\ndef nthpowerfulnumber(n):\r\n\tfound=1\r\n\tguess=1\r\n\tcount=0\r\n\twhile(found):\r\n\t\tif(powerfulnumber(guess)):\r\n\t\t    \r\n\t\t\tif(n==count):\r\n\t\t\t\tfound=0\r\n\t\t\t\treturn guess\r\n\t\t\t\r\n\t\t\tguess=guess+1\r\n\t\t\tcount+=1\r\n\t\t\t\r\n\t\telse:\r\n\t\t\tguess=guess+1",
+            "position": "8,1"
+        }
+    ]
+}
