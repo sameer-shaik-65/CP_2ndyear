@@ -1,0 +1,67 @@
+{
+    "smallestdifference.py": [
+        {
+            "operation": "PASTE",
+            "lines": 9,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 22:25:33",
+            "keyStrokeInfo": "def smallestdifference(a):\r\n    if(a==[]):\r\n        return(-1)\r\n    d=10**20\r\n    for i in range(len(a)-1):\r\n        for j in range(i+1,len(a)):\r\n            if(abs(a[i]-a[j])<d):\r\n                d=abs(a[i]-a[j])\r\n    return (d)",
+            "position": "7,1"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 22:26:25",
+            "keyStrokeInfo": "0",
+            "position": "10,7"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 22:27:22",
+            "keyStrokeInfo": "",
+            "position": "10,7"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 22:27:23",
+            "keyStrokeInfo": "1",
+            "position": "10,7"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 22:27:23",
+            "keyStrokeInfo": "0",
+            "position": "10,8"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 22:27:24",
+            "keyStrokeInfo": "*",
+            "position": "10,9"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 22:27:24",
+            "keyStrokeInfo": "*",
+            "position": "10,10"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 22:27:25",
+            "keyStrokeInfo": "2",
+            "position": "10,11"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 22:27:25",
+            "keyStrokeInfo": "0",
+            "position": "10,12"
+        }
+    ]
+}
