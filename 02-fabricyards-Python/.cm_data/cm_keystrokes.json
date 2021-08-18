@@ -1,0 +1,25 @@
+{
+    "fabricyards.py": [
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 22:10:42",
+            "keyStrokeInfo": "v",
+            "position": "14,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 22:10:43",
+            "keyStrokeInfo": "",
+            "position": "14,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 12,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 22:10:44",
+            "keyStrokeInfo": "def fabricyards(inches):\r\n    if inches<0:\r\n        return 0\r\n    if (inches%36==0):\r\n        return (inches//36)\r\n    else:\r\n        return ((inches//36)+1)\r\n\r\ndef fabricexcess(inches):\r\n    if inches==0 or (inches%36==0):\r\n        return 0\r\n    return abs((inches%36)-36)",
+            "position": "14,1"
+        }
+    ]
+}
