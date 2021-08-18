@@ -1,0 +1,11 @@
+{
+    "ishappynumber.py": [
+        {
+            "operation": "PASTE",
+            "lines": 14,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 23:25:28",
+            "keyStrokeInfo": "def ishappynumber(n):\r\n    \r\n\tif n<1:\r\n\t\treturn False\r\n\tsum = 0\r\n\twhile(n>0):\r\n\t\tsum+= (n % 10) * (n % 10)\r\n\t\tn = n//10\r\n\tif sum == 1:\r\n\t\treturn True \r\n\telif sum == 4:\r\n\t\treturn False\r\n\telse:\r\n\t\treturn ishappynumber(sum)",
+            "position": "20,1"
+        }
+    ]
+}
