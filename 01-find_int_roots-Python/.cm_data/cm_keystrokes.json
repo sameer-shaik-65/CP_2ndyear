@@ -1,0 +1,11 @@
+{
+    "find_int_roots.py": [
+        {
+            "operation": "PASTE",
+            "lines": 6,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 22:52:52",
+            "keyStrokeInfo": "import math\r\ndef fun_find_int_roots(a, b, c):\r\n\td=(b**2)-(4*a*c)\r\n\tsol1=(-b-(math.sqrt(d)))/2*a\r\n\tsol2=(-b+(math.sqrt(d)))/2*a\r\n\treturn sol1,sol2",
+            "position": "9,1"
+        }
+    ]
+}
