@@ -1,0 +1,95 @@
+{
+    "kth_occurrences.py": [
+        {
+            "operation": "PASTE",
+            "lines": 11,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 22:07:05",
+            "keyStrokeInfo": "def fun_kth_occurrences(s, n):\r\n\td={}\r\n\tl=[x for x in s]\r\n\tfor i in s:\r\n\t\td[i]=l.count(i)\r\n\t#print(d)\r\n\tfor i in range(n-1):\r\n\t\tm=max(d, key=d.get)\r\n\t\td.pop(m)\r\n\t\t#print(d)\r\n\treturn max(d,key=d.get)\r\n",
+            "position": "7,1"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 22:07:05",
+            "keyStrokeInfo": "    ",
+            "position": "8,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 22:07:08",
+            "keyStrokeInfo": "",
+            "position": "8,5"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 22:07:12",
+            "keyStrokeInfo": "",
+            "position": "8,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 22:07:12",
+            "keyStrokeInfo": "",
+            "position": "7,31"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 22:07:13",
+            "keyStrokeInfo": "\r\n    ",
+            "position": "7,31"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 22:07:14",
+            "keyStrokeInfo": "",
+            "position": "9,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 22:07:14",
+            "keyStrokeInfo": "",
+            "position": "8,9"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 22:07:14",
+            "keyStrokeInfo": "\r\n    ",
+            "position": "8,9"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 22:07:16",
+            "keyStrokeInfo": "",
+            "position": "10,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 22:07:16",
+            "keyStrokeInfo": "",
+            "position": "9,21"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 22:07:17",
+            "keyStrokeInfo": "\r\n    ",
+            "position": "9,21"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 22:07:27",
+            "keyStrokeInfo": "    ",
+            "position": "17,1"
+        }
+    ]
+}
