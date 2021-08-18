@@ -1,0 +1,11 @@
+{
+    "largestperfectsquare.py": [
+        {
+            "operation": "PASTE",
+            "lines": 7,
+            "keyStrokeTimeStamp": "Wed Aug 18 2021 13:53:29",
+            "keyStrokeInfo": "import math\r\ndef largestperfectsquare(n):\r\n\tx=int(math.sqrt(n))\r\n\tif n == (x**2):\r\n\t\treturn n\r\n\telse:\r\n\t\treturn (math.ceil(math.sqrt(n)) - 1)**2",
+            "position": "10,1"
+        }
+    ]
+}
