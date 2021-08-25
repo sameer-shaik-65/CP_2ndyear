@@ -1,0 +1,11 @@
+{
+    "issorted.py": [
+        {
+            "operation": "PASTE",
+            "lines": 5,
+            "keyStrokeTimeStamp": "Wed Aug 25 2021 11:00:30",
+            "keyStrokeInfo": "def issorted(a):\r\n    if(len(a)==0 or a==sorted(a) or a[::-1]==sorted(a)):\r\n        return (True) \r\n    else:\r\n        return (False)",
+            "position": "8,1"
+        }
+    ]
+}
