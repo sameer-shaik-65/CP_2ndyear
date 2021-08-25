@@ -1,0 +1,18 @@
+{
+    "rotatestrings.py": [
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Wed Aug 25 2021 11:04:54",
+            "keyStrokeInfo": "",
+            "position": "9,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 4,
+            "keyStrokeTimeStamp": "Wed Aug 25 2021 11:04:55",
+            "keyStrokeInfo": "def fun_rotatestrings(s, n):\r\n    n=n%len(s)\r\n    rotated= s[n:] + s[:n]\r\n    return rotated",
+            "position": "9,1"
+        }
+    ]
+}
