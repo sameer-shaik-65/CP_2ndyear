@@ -1,0 +1,18 @@
+{
+    "linkedlist.py": [
+        {
+            "operation": "DELETE",
+            "lines": 33,
+            "keyStrokeTimeStamp": "Wed Aug 25 2021 10:53:45",
+            "keyStrokeInfo": "",
+            "position": "11,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 71,
+            "keyStrokeTimeStamp": "Wed Aug 25 2021 10:53:45",
+            "keyStrokeInfo": "class Element(object):\r\n    def __init__(self, value):\r\n        self.value = value\r\n        self.next = None\r\n        \r\nclass LinkedList(object):\r\n    def __init__(self, head=None):\r\n        self.head = head\r\n        \r\n    def append(self, new_element):\r\n        # Your code goes here\r\n        #pass\r\n        n=self.head\r\n        while n.next!=None:\r\n            n=n.next\r\n        n.next=new_element\r\n     \r\n            \r\n    def get_position(self, position):\r\n        \"\"\"Get an element from a particular position.\r\n        Assume the first position is \"1\".\r\n        Return \"None\" if position is not in the list.\"\"\"\r\n        # Your code goes here\r\n        #pass\r\n        counter=1\r\n        n=self.head\r\n        if position<1:\r\n            return None\r\n\r\n        while n and counter <= position:\r\n            if counter==position:\r\n                return n\r\n            n=n.next\r\n            counter = counter+1\r\n        return None\r\n    \r\n    def insert(self, new_element, position):\r\n        \"\"\"Insert a new node at the given position.\r\n        Assume the first position is \"1\".\r\n        Inserting at position 3 means between\r\n        the 2nd and 3rd elements.\"\"\"\r\n        # Your code goes here\r\n        #pass\r\n        counter=1\r\n        n=self.head\r\n        if position>1:\r\n            while n and counter<position:\r\n                if counter == position - 1:\r\n                    new_element.next = n.next\r\n                    n.next = new_element\r\n                n = n.next\r\n                counter += 1\r\n        elif position == 1:\r\n            new_element.next = self.head\r\n            self.head = new_element\r\n    \r\n    \r\n    def delete(self, value):\r\n        \"\"\"Delete the first node with a given value.\"\"\"\r\n        # Your code goes here\r\n        #pass\r\n        n = self.head\r\n        previous = None\r\n        while n.value != value and n.next:\r\n            previous = n\r\n            n = n.next\r\n        if n.value == value:\r\n            if previous:\r\n                previous.next = n.next\r\n            else:\r\n                self.head = n.next",
+            "position": "11,1"
+        }
+    ]
+}
