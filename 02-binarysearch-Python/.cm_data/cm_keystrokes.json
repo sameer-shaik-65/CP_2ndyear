@@ -1,0 +1,11 @@
+{
+    "binarysearch.py": [
+        {
+            "operation": "PASTE",
+            "lines": 33,
+            "keyStrokeTimeStamp": "Wed Aug 25 2021 10:54:49",
+            "keyStrokeInfo": "def binary_search(input_array, value):\r\n     \r\n    # search space is `A[left…right]`\r\n    (left, right) = (0, len(input_array) - 1)\r\n \r\n    # loop till the search space is exhausted\r\n    while left <= right:\r\n \r\n        # find the mid-value in the search space and\r\n        # compares it with the target\r\n \r\n        mid = (left + right) // 2\r\n \r\n        # overflow can happen. Use:\r\n        # mid = left + (right - left) / 2\r\n        # mid = right - (right - left) // 2\r\n \r\n        # key is found\r\n        if value == input_array[mid]:\r\n            return mid\r\n \r\n        # discard all elements in the right search space,\r\n        # including the middle element\r\n        elif value < input_array[mid]:\r\n            right = mid - 1\r\n \r\n        # discard all elements in the left search space,\r\n        # including the middle element\r\n        else:\r\n            left = mid + 1\r\n \r\n    # `x` doesn't exist in the list\r\n    return -1",
+            "position": "13,1"
+        }
+    ]
+}
