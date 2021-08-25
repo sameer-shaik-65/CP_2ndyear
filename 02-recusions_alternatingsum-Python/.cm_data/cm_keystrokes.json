@@ -1,0 +1,11 @@
+{
+    "recursions_alternatingsum.py": [
+        {
+            "operation": "PASTE",
+            "lines": 7,
+            "keyStrokeTimeStamp": "Wed Aug 25 2021 11:19:44",
+            "keyStrokeInfo": "def fun_recursions_alternatingsum(l): \r\n    if (len(l) == 0):\r\n        return 0\r\n    elif (len(l) == 1):\r\n        return l[0]\r\n    else:\r\n        return l[0] - l[1] + fun_recursions_alternatingsum(l[2:])",
+            "position": "6,1"
+        }
+    ]
+}
