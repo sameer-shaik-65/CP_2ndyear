@@ -1,0 +1,11 @@
+{
+    "bst.py": [
+        {
+            "operation": "PASTE",
+            "lines": 30,
+            "keyStrokeTimeStamp": "Wed Aug 25 2021 11:02:52",
+            "keyStrokeInfo": "class Node(object):\r\n    def __init__(self, value):\r\n        self.value = value\r\n        self.left = None\r\n        self.right = None\r\n\r\nclass BST(object):\r\n    def __init__(self, root):\r\n        self.root = Node(root)\r\n\r\n    def insert(self, new_val):\r\n        if self.root is None:\r\n            return Node(root)\r\n        else:\r\n            if self.root == new_val:\r\n                return root\r\n            elif self.root < new_val:\r\n                self.right = insert(self.right, new_val)\r\n            else:\r\n                self.left = insert(self.left, new_val)\r\n            return self\r\n \r\n\r\n    def printSelf(self):\r\n        # Your code goes here\r\n        pass\r\n        \r\n    def search(self, find_val):\r\n        # Your code goes here\r\n        pass",
+            "position": "1,1"
+        }
+    ]
+}
