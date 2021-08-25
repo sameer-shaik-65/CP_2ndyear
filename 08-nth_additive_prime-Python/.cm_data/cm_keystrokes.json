@@ -1,0 +1,11 @@
+{
+    "nth_additive_prime.py": [
+        {
+            "operation": "PASTE",
+            "lines": 22,
+            "keyStrokeTimeStamp": "Wed Aug 25 2021 10:52:19",
+            "keyStrokeInfo": "def isPrime(n):\r\n    n = int(n)\r\n    if n>1:\r\n        for i in range(2,n):\r\n            if n%i==0:\r\n                return False\r\n        return True\r\n \r\ndef getSum(n):\r\n \r\n    sum = 0\r\n    while (n != 0):\r\n        sum = sum + n % 10\r\n        n = n / 10\r\n    return sum\r\n\r\ndef isAdditivePrime(n):\r\n    if (not isPrime(n)):\r\n        return False\r\n    return isPrime(getSum(n))\r\n    \r\nprint(isAdditivePrime(290))",
+            "position": "9,1"
+        }
+    ]
+}
