@@ -1,0 +1,18 @@
+{
+    "inverselookandsay.py": [
+        {
+            "operation": "PASTE",
+            "lines": 9,
+            "keyStrokeTimeStamp": "Fri Aug 27 2021 10:18:24",
+            "keyStrokeInfo": "def inverselookandsay(a):\r\n\t# Your code goes here\r\n\tres=[]\r\n\tif a==[(),]:\r\n\t\treturn []\r\n\telse:\t\r\n\t\tfor i in a:\r\n\t\t\tres=res+[i[1]]*i[0]\r\n\treturn res",
+            "position": "22,1"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Fri Aug 27 2021 10:18:24",
+            "keyStrokeInfo": "    ",
+            "position": "23,1"
+        }
+    ]
+}
