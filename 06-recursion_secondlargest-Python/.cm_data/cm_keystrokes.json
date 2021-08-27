@@ -1,0 +1,32 @@
+{
+    "recursion_secondlargest.py": [
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Fri Aug 27 2021 10:27:47",
+            "keyStrokeInfo": "secondLargest",
+            "position": "15,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 3,
+            "keyStrokeTimeStamp": "Fri Aug 27 2021 10:27:48",
+            "keyStrokeInfo": "\r\ndef recursion_secondlargest(L):\r\n\t# Your code goes here\r\n\tpass",
+            "position": "15,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 2,
+            "keyStrokeTimeStamp": "Fri Aug 27 2021 10:27:56",
+            "keyStrokeInfo": "",
+            "position": "16,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 7,
+            "keyStrokeTimeStamp": "Fri Aug 27 2021 10:27:56",
+            "keyStrokeInfo": "def recursion_secondlargest(L):\r\n    if len(L)==0 or len(L)==1:\r\n        return None\r\n    else:\r\n        z=max(L)\r\n        L.remove(z)\r\n        return max(L)",
+            "position": "16,1"
+        }
+    ]
+}
