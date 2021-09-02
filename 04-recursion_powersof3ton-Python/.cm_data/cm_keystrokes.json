@@ -1,0 +1,18 @@
+{
+    "recursion_powersof3ton.py": [
+        {
+            "operation": "PASTE",
+            "lines": 17,
+            "keyStrokeTimeStamp": "Thu Sep 02 2021 09:26:09",
+            "keyStrokeInfo": "def recursion_powersof3ton(n):\r\n\t# Your code goes here\r\n\t#pass\r\n\tif(n<=0):\r\n\t\treturn None\r\n\telif(n==1):\r\n\t\treturn([int(n)])\r\n\telse:\r\n\t\treturn(recurse(n,y=0))\r\n\t\t\r\ndef recurse(n,y):\r\n\tif(n<y):\r\n\t\treturn([])\r\n\telif((3**y)<=n):\r\n\t\treturn([3**y]+recurse(n,y+1))\r\n\telse:\r\n\t\treturn([])",
+            "position": "6,1"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Thu Sep 02 2021 09:26:09",
+            "keyStrokeInfo": "    ",
+            "position": "7,1"
+        }
+    ]
+}
