@@ -1,0 +1,11 @@
+{
+    "happyprimes.py": [
+        {
+            "operation": "PASTE",
+            "lines": 31,
+            "keyStrokeTimeStamp": "Thu Sep 02 2021 09:35:10",
+            "keyStrokeInfo": "def ishappyprimenumber(m):\r\n    if(ishappynumber(m) and isprime(m)):\r\n        return True\r\n    return False\r\n \r\ndef ishappynumber(n):\r\n    if(n==1):\r\n        return True\r\n    while (n>=10):\r\n        n=squarenum(n)\r\n        if(n==1):\r\n            return True\r\n    return False\r\n \r\ndef squarenum(m):\r\n    sum=0\r\n    while(m>0):\r\n        rem=m%10\r\n        sum+=(rem*rem)\r\n        m//=10\r\n    return sum\r\n \r\ndef isprime(y):\r\n      if(y<=1):\r\n            return False\r\n      else:\r\n        for i in range(2,y+1):\r\n            if(y%i==0):\r\n                return False\r\n            else:\r\n                return True",
+            "position": "12,1"
+        }
+    ]
+}
