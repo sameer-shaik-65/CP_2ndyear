@@ -18,4 +18,11 @@
 
 def movieAwards(oscarResults):
     # Your code goes here...
-    pass
+    #pass
+    d={}
+    for i in oscarResults:
+        if i[1] not in d:
+            d[i[1]]=1
+        else:
+            d[i[1]]+=1
+    return d

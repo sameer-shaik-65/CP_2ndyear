@@ -1,0 +1,29 @@
+{
+    "LatinSquare.py": [
+        {
+            "operation": "PASTE",
+            "lines": 33,
+            "keyStrokeTimeStamp": "Thu Sep 02 2021 09:17:23",
+            "keyStrokeInfo": "def isLatinSquare(l):\r\n    x=[]\r\n    for i in range(len(l[0])):\r\n        if (l[0][i] not in x):\r\n            x.append(l[0][i])\r\n        else:\r\n            return False\r\n    for j in range(len(l)):#012\r\n        c=[]\r\n        r=[]\r\n        for k in range(len(l[j])):#0123\r\n            if l[j][k] not in x:\r\n                return False\r\n            else:\r\n                if l[k][j] not in c:\r\n                    c.append(l[k][j])\r\n                else:\r\n                    return False\r\n                if l[j][k] not in r:\r\n                    r.append(l[j][k])\r\n                else:\r\n                    return False\r\n        print('row',r)\r\n        print('col',c)\r\n                \r\n    return True    \r\n            \r\n    \r\n        \r\n           \r\n\r\nl=[[1,2,3],[1,2,3],[20,3,1]] \r\nprint(isLatinSquare(l))",
+            "position": "10,1"
+        }
+    ],
+    "quiz.py": [
+        {
+            "operation": "PASTE",
+            "lines": 44,
+            "keyStrokeTimeStamp": "Thu Sep 02 2021 09:20:23",
+            "keyStrokeInfo": "\r\ndef bestQuiz(l):\r\n    # Your  code goes ehre...\r\n    #pass \r\n    count=[0,0,0]\r\n    avg=[0,0,0]\r\n    for i in range(len(l)):\r\n            for j in range(len(l[0])):\r\n                  if (l[i][j]!=-1):\r\n                        avg[j]+=l[i][j]\r\n                        count[j]+=1\r\n      #print(count)\r\n      #print(avg)  \r\n    max=0\r\n    res=0\r\n    for j in range(len(l[0])):\r\n            if count[j]!=0:\r\n                  avg[j]=avg[j]/count[j]\r\n            else:\r\n                  avg[j]=0\r\n            #print(max,avg[j])      \r\n            if max<avg[j]:\r\n                  max=avg[j]\r\n                  res=j\r\n      #print (max)\r\n    if max==0:\r\n            return None\r\n    else:\r\n            return res \r\n\r\ndef testBestQuiz():\r\n    print('Testing bestQuiz()...', end='')\r\n    a = [ [ 88,  80, 91 ],\r\n\t    [ 68, 100, -1 ]]\r\n    assert(bestQuiz(a) == 2)\r\n    a = [ [ 88,  80, 80 ],\r\n\t    [ 68, 100, 100 ]]\r\n    assert(bestQuiz(a) == 1)\r\n    a = [ [88, -1, -1 ],\r\n\t    [68, -1, -1 ]]\r\n    assert(bestQuiz(a) == 0)\r\n    a = [ [-1, -1, -1 ],\r\n\t    [-1, -1, -1 ]]\r\n    assert(bestQuiz(a) == None)\r\n    print('All test cases passed...!')",
+            "position": "7,1"
+        }
+    ],
+    "movie_awards.py": [
+        {
+            "operation": "PASTE",
+            "lines": 10,
+            "keyStrokeTimeStamp": "Thu Sep 02 2021 09:22:34",
+            "keyStrokeInfo": "def movieAwards(oscarResults):\r\n    # Your code goes here...\r\n    #pass\r\n    d={}\r\n    for i in oscarResults:\r\n        if i[1] not in d:\r\n            d[i[1]]=1\r\n        else:\r\n            d[i[1]]+=1\r\n    return d\r\n",
+            "position": "19,1"
+        }
+    ]
+}
