@@ -1,0 +1,11 @@
+{
+    "SayHi.py": [
+        {
+            "operation": "PASTE",
+            "lines": 15,
+            "keyStrokeTimeStamp": "Thu Sep 02 2021 09:27:30",
+            "keyStrokeInfo": "class Dog(object):\r\n    def __init__(self, name,age):\r\n        self.name = name\r\n        self.age = age\r\n    \r\n\r\ndef SayHi(Dog):\r\n     #pass\r\n    print(f'Hi, my name is {Dog.name} and I am {Dog.age} years old!')\r\n\r\nd1 = Dog('Dot', 4)\r\nd2 = Dog('Elf', 3)\r\n\r\nSayHi(d1) #Hi, my name is Dot and I am 4 years old!\r\nSayHi(d2) #Hi, my name is Elf and I am 3 years old!\r\n    ",
+            "position": "7,1"
+        }
+    ]
+}
