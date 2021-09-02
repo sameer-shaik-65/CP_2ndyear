@@ -1,0 +1,11 @@
+{
+    "nthpronicnumber.py": [
+        {
+            "operation": "PASTE",
+            "lines": 23,
+            "keyStrokeTimeStamp": "Thu Sep 02 2021 09:36:51",
+            "keyStrokeInfo": "import math\r\ndef checkPronic(x) :\r\n    i = 0\r\n    while ( i <= (int)(math.sqrt(x)) ) :\r\n         \r\n        # Checking Pronic Number\r\n        # by multiplying consecutive\r\n        # numbers\r\n        if ( x == i * (i + 1)) :\r\n            return True\r\n        i = i + 1\r\n \r\n    return False\r\n \r\ndef nthpronicnumber(n):\r\n    count=0\r\n    j=0\r\n    while(count<=n):\r\n        if(checkPronic(j)):\r\n            count+=1\r\n            res=j\r\n        j+=1\r\n    return res",
+            "position": "6,1"
+        }
+    ]
+}
